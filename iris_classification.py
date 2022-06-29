@@ -28,8 +28,8 @@ st.write(df)
 
 iris = pd.read_csv('https://raw.githubusercontent.com/Pohyee02/IRIS_Classification/main/iris.csv')
 features_col = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
-X = iris.features_col #Features
-Y = iris.Species #Target variable
+X = iris[features_col] #Features
+Y = iris.species #Target variable
 
 clf = RandomForestClassifier()
 clf.fit(X, Y)
