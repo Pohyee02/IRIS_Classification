@@ -26,6 +26,10 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
+with st.spinner('Wait for it...'):
+    time.sleep(5)
+st.success('Done!')
+
 iris = pd.read_csv('https://raw.githubusercontent.com/Pohyee02/IRIS_Classification/main/iris.csv')
 features_col = ['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']
 X = iris[features_col] #Features
@@ -40,7 +44,7 @@ prediction_proba = clf.predict_proba(df)
 st.subheader('Class labels and their corresponding index number')
 st.write(['Iris-setosa', 'Iris-versicolor', 'Iris-virginica'])
 df = pd.DataFrame({'Iris Flower Species' : ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']})
-st.dataframe(df, 300, 100)
+st.dataframe(df, 250, 100)
 
 st.subheader('Prediction')
 #st.write(iris.target_names[prediction])
