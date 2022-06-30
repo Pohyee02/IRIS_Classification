@@ -62,5 +62,7 @@ species = st.radio(
 
 if species == 'Iris-setosa':
      st.write('You like Iris-setosa.')
+elif species == 'Iris-versicolor':
+     st.write('You like Iris-versicolor')
 else:
-     st.write("You don't like Iris-setosa.")
+     st.write("You like Iris-virginica")
