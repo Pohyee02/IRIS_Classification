@@ -53,14 +53,14 @@ st.subheader('Image Gallery')
 if st.button('Show Me'):
     st.image('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
 else:
-    st.write('')
+    st.write('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
 
 species = st.radio(
-     "Tell us which is your favourite?",
+     "Which is your favourite?",
      ('Iris-setosa', 'Iris-versicolor', 'Iris-virginica'))
 if species == 'Iris-setosa':
      st.write('You like Iris-setosa.')
 elif species == 'Iris-versicolor':
-     st.write('You like Iris-versicolor')
+     st.write('You like Iris-versicolor.')
 else:
-     st.write("You like Iris-virginica")
+     st.write("You like Iris-virginica.")
