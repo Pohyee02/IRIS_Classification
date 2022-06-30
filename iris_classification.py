@@ -26,10 +26,6 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-with st.spinner('Wait for it...'):
-    time.sleep(5)
-st.success('Done!')
-
 iris = pd.read_csv('https://raw.githubusercontent.com/Pohyee02/IRIS_Classification/main/iris.csv')
 features_col = ['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']
 X = iris[features_col] #Features
