@@ -56,7 +56,7 @@ else:
     st.write('')
 
 species = st.radio(
-("What's your favorite flower?",
+    ("What's your favorite flower?",
      ('Iris-setosa', 'Iris-versicolor', 'Iris-virginica'))
 
 if species == 'Iris-setosa':
