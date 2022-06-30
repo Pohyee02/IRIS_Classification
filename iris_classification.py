@@ -56,9 +56,7 @@ else:
     st.write('')
 
 st.subheader('Tell us which is your favourite?')
-species = st.radio(
-     "What's your favorite flower?",
-     ('Iris-setosa', 'Iris-versicolor', 'Iris-virginica'))
+species = st.radio(('Iris-setosa', 'Iris-versicolor', 'Iris-virginica'))
 
 if species == 'Iris-setosa':
      st.write('You like Iris-setosa.')
