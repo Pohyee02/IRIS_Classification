@@ -50,7 +50,7 @@ st.subheader('Prediction Probability')
 st.write(prediction_proba)
 
 if st.button('Show Me'):
-     st.image('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
- else:
-     st.write('Goodbye')
+    st.image('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
+else:
+    st.write('Goodbye')
 
